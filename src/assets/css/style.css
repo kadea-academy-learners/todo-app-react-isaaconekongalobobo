@@ -1,0 +1,114 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+:root {
+    --principale : #00adb5;
+    --blanc: #ffffff;
+    --noir: #222831;
+}
+
+body {
+    background-color: var(--noir);
+    color: var(--principale);
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    color: var(--blanc);
+    font-weight: bold;
+}
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+/* Bloc principale */
+.bloc-principale {
+    display: flex;
+    gap: 10px
+    ;
+}
+.navbar {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    padding: 20px;
+}
+.onglets {
+    display: flex;
+    position: relative;
+    gap: 10px;
+    top: 20px;
+}
+#btn-new-task {
+    background-color: var(--principale);
+    color: var(--blanc);
+    width: 200px;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    position: relative;
+    left: 180%;
+}
+
+.form-new-task {
+    /* display: none; */
+    position: relative;
+    margin: 10px;
+    left: 50px;
+}
+
+
+.form-new-task input[type="text"]{
+    position: relative;
+    width: 300px;
+    height: 40x;
+    color: #00adb5;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.form-new-task input[type="submit"]{
+    position: relative;
+    width: 100px;
+    height: 40px;
+    color: var(--blanc);
+    background-color: var(--principale);
+    border: none;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+.bloc-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.bloc-input textarea{
+    width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bloc-tasks-list {
+    margin: 10px;
+    position: relative;
+    left: 20%;
+    top: 60px;
+    background-color: var(--blanc);
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.bloc-tasks-list h1{
+text-align: center;
+}
