@@ -1,6 +1,7 @@
 import '../css/style.css'
 
 const FormNewTask = () => {
+    // Fonction pour extraire les donnee du formulaire et le stocker dans le local storage
     const extractionDeDonnee = (e) => {
         e.preventDefault();
         const formulaireCible = e.target

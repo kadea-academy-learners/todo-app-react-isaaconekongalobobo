@@ -107,8 +107,40 @@ h1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.bloc-tasks-list h1{
+.titre-liste-taches{
 text-align: center;
+position: relative;
+}
+.bloc-tasks-list ul {
+    list-style-type: none;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.bloc-task-item {
+    background-color: var(--noir);
+    margin-top: 5px;
+    height: 50px;
+    padding: 5px;
+}
+.bloc-task-item input {
+    position: relative;
+    top: 30%;
+    left: 4%;
+}
+.bloc-task-item label {
+    position: relative;
+    top: 30%;
+    left: 6%;
+}
+.bloc-bouton {
+    position: relative;
+    left: 70%;
+    display: flex;
+    gap: 5px
+    ;
 }
