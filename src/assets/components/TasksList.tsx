@@ -1,19 +1,9 @@
 import '../css/style.css'
 
-const TasksList = () => {
-    // Fonction pour recuperer les taches depuis le local storage pour les afficher en liste
-    // const tasksList = () => {
-    //     const allTasks = localStorage.getItem ("tasks")
-    //     const tbAllTasks = JSON.parse (allTasks || "")
-    //     if (allTasks?.length !== 0 ) {
-    //         const tasks = tbAllTasks.map ((task) => {
-    //             return <li> {task.taskName} </li>
-    //         })
-    //     }
-    // }
+const TasksList = (taskslist) => {
 
-    const allTasks = localStorage.getItem ("tasks")
-    const tbAllTasks = JSON.parse (allTasks || "")
+    const tbAllTasks = taskslist.allTasks
+    
     const tasks = tbAllTasks.map ((task) => {
         return <li>
                 <div className='bloc-task-item'>
