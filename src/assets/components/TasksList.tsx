@@ -1,14 +1,23 @@
 import '../css/style.css'
+interface TaskList {
+    allTasks: [];
+}
+const TasksList = (taskslist: TaskList) => {
 
-const TasksList = (taskslist) => {
+
+    interface Task {
+        taskName : string,
+        taskDescription : string
+    }
 
     const tbAllTasks = taskslist.allTasks
     
-    const tasks = tbAllTasks.map ((task) => {
+    
+    const tasks = tbAllTasks.map ((task : Task) => {
         return <li>
                 <div className='bloc-task-item'>
-                    <input type="checkbox" name={task.id} id={task.id} />
-                    <label htmlFor={task.id}>{task.taskName}</label>
+                    <input type="checkbox" />
+                    <label>{task.taskName}</label>
                     <div className='bloc-bouton'>
                         <button className='btn-suppression'>Supprimer</button>
                         <button className='btn-suppression'>Modifier</button>                        
